@@ -141,7 +141,7 @@ header a:hover{
     height: 500px;
     position: relative;
     color: white;
-    background-color: rgba(73, 73, 77, 0.29);
+    background-color: rgba(0, 0, 0, 0.55);
     overflow: hidden;
 }
 .showCase h1{
@@ -420,8 +420,25 @@ footer{
 /* MEDIA QUARIES  */
 
 @media(max-width: 768px){
+    header{
+        position: static;
+        height: auto;
+        padding: 20px;
+    }
+    header .container.flex{
+        justify-content: flex-start;
+    }
+    .showCase{
+        background-color: var(--primary-color);
+    }
+    .showCase h1{
+        font-size: 25px;
+    }
+    .showCase button{
+        border: 2px solid white;
+    }
     .showCase-content{
-        padding-top: 5rem;
+        padding-top: 7rem;
         line-height: 40px;
     }
     .grid, .contact .grid3, .developers .grid, .blog .grid{
